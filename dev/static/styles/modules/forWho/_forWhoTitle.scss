@@ -1,0 +1,61 @@
+.titleWrapper {
+  position: relative;
+
+  &__textMarked {
+    position: absolute;
+    max-width: 516px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include tablet {
+      max-width: 442px;
+      top: -9px;
+      height: auto;
+    }
+    @include phone-wide {
+      max-width: 360px;
+      top: -4px;
+      height: auto;
+    }
+    @include phone {
+      max-width: 258px;
+      top: 10px;
+      height: auto;
+      left: 23px;
+    }
+
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: $font-weight-bolder;
+    font-family: $font-dewi;
+    max-width: 797px;
+    width: 100%;
+    padding: 18px 34px;
+    @include tablet {
+      max-width: 393px;
+      font-size: 36px;
+    }
+    @include phone-wide {
+      max-width: 306px;
+      font-size: 28px;
+    }
+    @include phone {
+      max-width: 252px;
+      line-height: 130%;
+      font-size: 23px;
+    }
+
+  }
+
+  &__colored {
+    color: $color-dodger-blue;
+  }
+
+  path {
+    stroke-width: 2px;
+  }
+}
+

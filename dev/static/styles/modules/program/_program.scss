@@ -1,0 +1,66 @@
+.program {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 80px;
+  &__title {
+    font-family: $font-dewi;
+    max-width: 370px;
+    width: 100%;
+    color: $color-black;
+    font-weight: $font-weight-bold;
+    font-size: 44px;
+    line-height: 130%;
+    margin-top: 0;
+    position: sticky;
+    top: 200px;
+    @include tablet-wide {
+      flex-wrap: wrap;
+      max-width: 880px;
+      margin-bottom: 80px;
+      line-height: 57px;
+      position: relative;
+      top: 20px;
+    }
+    @include tablet {
+      line-height: 48px;
+      font-size: 36px;
+      margin-bottom: 56px;
+    }
+    @include phone-wide {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 40px;
+      margin-left: 5px;
+    }
+    @include phone {
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 32px;
+    }
+    &--colored {
+      color: $color-dodger-blue;
+    }
+  }
+  &__description {
+    max-width: 770px;
+    width: 100%;
+    @include tablet-wide {
+      max-width: 940px;
+    }
+  }
+  @include tablet-wide {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include tablet {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  @include phone-wide {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}

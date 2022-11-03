@@ -1,0 +1,26 @@
+.programIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  background:rgba(71, 144, 253, 0.1);
+  border-radius: 8px;
+  margin-left: 10px;
+  &__item{
+    max-width: 24px;
+    width: 100%;
+    height: 24px;
+    margin: 0 auto;
+    fill: $color-dodger-blue;
+    transition-duration: .2s;
+    &--active{
+      fill: $color-white;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--active {
+    background: $color-dodger-blue;
+  }
+}

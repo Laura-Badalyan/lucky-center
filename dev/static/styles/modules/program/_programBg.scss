@@ -1,0 +1,15 @@
+.programBg {
+  display: flex;
+
+  &__arrow {
+    max-width: 320px;
+    width: 100%;
+    height: 724px;
+    background: url('../images/general/bg-arrow2.png') no-repeat center right/cover;
+    @media(max-width: 1600px) {
+      display: none;
+    }
+
+  }
+
+}

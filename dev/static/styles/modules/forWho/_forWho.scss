@@ -1,0 +1,65 @@
+.forWhoBlock {
+  padding-top: 65px;
+  margin-bottom: 150px;
+  @include tablet {
+   margin-bottom: 100px;
+  }
+  @include phone-wide {
+    margin-bottom: 80px;
+  }
+  @include phone {
+    margin-bottom: 48px;
+  }
+  &__leftBg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    @include tablet {
+      position: initial;
+    }
+  }
+
+  &__bgArrow {
+    width: 17%;
+    height: 48%;
+    background: url('../images/general/bg-arrow.png') no-repeat center right/cover;
+    @media(max-width: 1600px) {
+      width: 19%;
+      height: 52%;
+      margin-top: 25px;
+    }
+    @media(max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  &__bgCubes {
+    width: 83%;
+    height: 100%;
+    background: url('../images/general/forWho-bg.svg') no-repeat center left/cover;
+    min-width: 1400px;
+    @media(max-width: 1400px) {
+      min-width: initial;
+      width: 100%;
+    }
+    @include tablet {
+      background: none;
+    }
+  }
+
+  &__textContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 34px;
+    @include tablet-wide {
+      padding: 0 40px;
+    }
+    @include tablet {
+      padding: 0 10px;
+    }
+
+  }
+}

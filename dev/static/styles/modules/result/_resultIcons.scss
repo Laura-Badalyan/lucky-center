@@ -1,0 +1,15 @@
+.resultIcons {
+  display: inline-block;
+  background-image: url('../images/general/resultIcons.png');
+  width: 130px;
+  height: 144px;
+  &__cursor {
+    background-position: -160px -10px;
+  }
+  &__hand {
+    background-position: -310px -10px;
+  }
+  &__key {
+    background-position: -10px -10px;
+  }
+}

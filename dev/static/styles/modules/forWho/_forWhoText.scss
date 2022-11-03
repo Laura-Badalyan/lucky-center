@@ -1,0 +1,45 @@
+.clause {
+  &__subtitle {
+    font-size: 24px;
+    font-weight: $font-weight-bolder;
+    font-family: $font-dewi;
+    max-width: 370px;
+    width: 100%;
+    @include tablet {
+      max-width: 220px;
+      font-size: 20px;
+    }
+    @include phone-wide {
+      max-width: 459px;
+      font-size: 20px;
+    }
+
+
+
+  }
+  &__text {
+    max-width: 570px;
+    width: 100%;
+    @include phone-wide {
+      font-size: 18px;
+      max-width: 460px;
+    }
+    @include phone {
+      font-size: $base-font-size;
+      max-width: 340px;
+    }
+
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    font-family: $font-monsterrat;
+    line-height: 27px;
+    color: $color-shark;
+    font-weight: $font-weight-regular;
+  }
+
+  &__colored {
+    color: $color-dodger-blue;
+  }
+}

@@ -1,0 +1,64 @@
+.resultBlock {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  width: 100%;
+  min-height: 410px;
+  height: 100%;
+  background: $color-shark;
+  border: 1px solid $color-dodger-blue;
+  border-radius: 24px;
+  padding: 92px 17px 32px 24px;
+  box-sizing: border-box;
+
+
+  &__itemHeading {
+    color: $color-dodger-blue;
+    font-family: $font-dewi;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    line-height: 130%;
+    margin: 24px 0 0 0;
+    @include phone {
+      font-size: 18px;
+    }
+  }
+
+  &__itemText {
+    color: $color-white;
+    font-size: 18px;
+    font-family: $font-monsterrat;
+    font-weight: $font-weight-regular;
+    line-height: 150%;
+    margin: 16px 0 0;
+    @include phone {
+      font-size: 16px;
+    }
+  }
+
+  &__icons {
+    margin-top: -174px;
+  }
+  @include tablet-wide {
+    max-width: 300px;
+    width: 100%;
+    min-height: 488px;
+  }
+  @include tablet {
+    max-width: 100%;
+    width: 100%;
+    min-height: 273px;
+    margin: 0 10px 108px;
+  }
+  &:last-child{
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+  @include phone-wide {
+    padding: 92px 24px 32px;
+  }
+  @include phone {
+    margin: 0 10px 108px;
+  }
+}

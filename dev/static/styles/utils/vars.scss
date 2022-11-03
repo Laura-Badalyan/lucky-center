@@ -1,0 +1,68 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-zircon: #FAFCFF;
+$color-dodger-blue: #4790FD;
+$color-blue-ribbon: #0362F0;
+$color-ghost: #C2C8D1;
+$color-shark: #23272F;
+$color-portage: #7786E6;
+$color-french-pass: #C8DFFD;
+$color-pickled-bluewood: #28334A;
+$color-thunder: #231F20;
+$color-gallery: #EBEBEB;
+$color-malibu: #85B6FF;
+$color-periwinkle: #C1DAFF;
+$color-tacha: #DAC865;
+$color-tosca: #97493E;
+$color-chelsea-cucumber: #6FB353;
+$color-firefly: #0D1C2E;
+
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  "phone"       : 360px,
+  "phone-wide"  : 480px,
+  "phablet"     : 640px,
+  "tablet-small": 640px,
+  "tablet"      : 960px,
+  "tablet-wide" : 1200px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+/*
+*
+  @include phone-wide {
+    your css code
+  }
+*
+ */
+
+@mixin phone {
+  @media (max-width: 480px) { @content; }
+}
+@mixin phone-wide {
+  @media (max-width: 640px) { @content; }
+}
+@mixin tablet {
+  @media (max-width: 960px) { @content; }
+}
+@mixin tablet-wide {
+  @media (max-width: 1200px) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 1201px) { @content; }
+}
+
+$content-size: 1024px;
+
+// Fonts
+$font-monsterrat: 'Montserrat', sans-serif;
+$font-dewi: 'RF Dewi Expanded', sans-serif;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;

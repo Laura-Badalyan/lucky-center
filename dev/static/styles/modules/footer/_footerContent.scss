@@ -1,0 +1,20 @@
+.footerContent {
+
+  &__logo {
+
+    &Svg {
+      width: 260px;
+      height: 34px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    @include phone-wide {
+      margin-top: 5px;
+    }
+  }
+}

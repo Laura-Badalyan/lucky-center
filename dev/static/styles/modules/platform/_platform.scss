@@ -1,0 +1,133 @@
+.platform {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  box-sizing: border-box;
+  max-height: 878px;
+  margin: 0 auto 0 217px;
+  display: flex;
+  overflow: hidden;
+  @media (max-width: 1220px) {
+    margin: 0 auto 0 162px;
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+  }
+  @include tablet-wide {
+    margin-left: 40px;
+  }
+  @include tablet {
+    max-width: 620px;
+    max-height: initial;
+    margin: 0 auto;
+    padding: 64px 0;
+  }
+  @include phone-wide {
+    padding: 40px 10px;
+  }
+  @include phone {
+    padding: 32px 0;
+  }
+
+  &:before {
+    content: '';
+    height: 100%;
+    max-width: 752px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: -330px;
+    background: url('../images/general/platform_arrow.svg') no-repeat;
+    @include tablet-wide {
+      right: -380px;
+    }
+    @include tablet {
+      background: none;
+    }
+  }
+
+  &--bg {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto 150px;
+    background: url("../images/general/platform_bg.jpg") no-repeat center center/cover;
+    border-radius: 64px;
+    display: inline-flex;
+    margin-bottom: -395px;
+
+    @include tablet-wide {
+      margin-bottom: -404px;
+    }
+    @include tablet {
+      margin-bottom: -438px;
+
+    }
+    @include phone-wide {
+      margin-bottom: -454px;
+      border-radius: 32px;
+    }
+    @include phone-wide {
+      margin-bottom: -470px;
+    }
+    @include phone{
+      border-radius: 24px;
+    }
+
+
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    color: $color-white;
+    font-size: 18px;
+    font-weight: $font-weight-bold;
+    font-family: $font-monsterrat;
+    line-height: 150%;
+    margin: 0;
+    @include phone {
+      font-size: $base-font-size;
+      padding: 0 10px;
+
+    }
+  }
+
+  &__cursImgBlock {
+    background: url("../images/general/platform_screenshot.png") no-repeat center left/cover;
+    max-width: 500px;
+    width: 100%;
+    height: 445px;
+    margin-top: 92px;
+    z-index: 1;
+    @media(max-width: 1430px) {
+      width: 30%;
+    }
+    @media(max-width: 1220px) {
+      width: 15%;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__lessonCursImg {
+    position: absolute;
+    left: 95px;
+  }
+
+  &__textBlock {
+    z-index: 1;
+  }
+
+  &__lessonMaterials {
+
+  }
+
+  &__colored {
+    color: $color-dodger-blue;
+  }
+}

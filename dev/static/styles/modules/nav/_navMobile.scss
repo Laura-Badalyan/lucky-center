@@ -1,0 +1,68 @@
+.navMobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  @include tablet-wide {
+    display: block;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding:  24px 39px 0 41px;
+    &__show {
+      box-sizing: border-box;
+      border: 1px solid $color-french-pass;
+      border-radius: 0 0 64px 64px;
+      background: $color-zircon;
+      @include tablet {
+        border-radius: 0 0 32px 32px;;
+      }
+      @include phone {
+        border-radius: 0 0 24px 24px;;
+      }
+    }
+    &__navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-height: 40px;
+
+
+      &__logo {
+
+      }
+
+      &__menu {
+        margin-left: auto;
+        margin-right: 28px;
+      }
+
+
+    }
+    &__entry {
+      @include tablet {
+        display: none;
+      }
+    }
+    &__buttonBurger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @include phone {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &__login {
+    display: none;
+    max-width: 40px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    @include tablet {
+      display: flex;
+    }
+  }
+}

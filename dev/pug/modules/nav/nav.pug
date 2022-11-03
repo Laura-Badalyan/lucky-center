@@ -1,0 +1,13 @@
+
+- var menu = [{name: 'Для кого', link: '#hoom'}, {name: 'Программа', link: '#format'}, {name: 'Партнеры', link: '#partners'}]
+.nav
+    .nav__logo.logo
+        a.logo__link(href="#")
+            +icon('nav_logo')
+    ul.nav__menu.menu
+        each val in menu
+          li.menu__item
+            a.menu__link(href=""+val.link)= val.name
+    .nav__entry.entry
+        a.entry__login.button(href="https://luckycenter.ekvio.ru/login") Войти
+        a.entry__registration.button.button--fill(href="https://lucky-center.com/auth/registration") Регистрация

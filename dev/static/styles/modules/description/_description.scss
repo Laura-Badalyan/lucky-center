@@ -1,0 +1,81 @@
+.description{
+  max-width: 789px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 100px;
+  @media (max-width: 1430px) {
+    max-width: 727px;
+  }
+  @include tablet-wide{
+    padding-left: 54px;
+    margin-top: 105px;
+  }
+  @include tablet{
+    padding: 0 20px;
+  }
+  @include phone-wide{
+    padding: 0 10px;
+  }
+  @include phone{
+    padding: 0 10px;
+  }
+  &__about{
+    font-family: $font-monsterrat;
+    max-width: 330px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $color-dodger-blue;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px 0 12px 12px;
+    font-weight: $font-weight-regular;
+
+    @include phone{
+      font-size: 14px;
+      max-width: 300px;
+    }
+  }
+  &__accent{
+    color: $color-shark;
+    font-family: $font-monsterrat;
+    font-weight: $font-weight-bold;
+  }
+
+  &__receive{
+    display: flex;
+    align-items: center;
+    @include phone{
+      flex-direction: row;
+    }
+    @media (max-width: 360px){
+      flex-direction: column;
+    }
+    &--button{
+      min-width: 300px;
+      margin-right: 24px;
+      @include phone-wide{
+        min-width: 235px;
+      }
+      @include phone{
+        min-width: 303px;
+        margin-right: 0;
+      }
+    }
+    &--text{
+      font-family: $font-monsterrat;
+      font-weight: $font-weight-regular;
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 148px;
+      max-height: 27px;
+      color: $color-shark;
+      @media (max-width: 960px) and (min-width: 830px){
+        min-width: 148px;
+      }
+    }
+    @include phone {
+      flex-direction: column;
+    }
+  }
+}

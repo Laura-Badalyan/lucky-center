@@ -1,0 +1,8 @@
+- var partnersLogo = [{name: 'dolphin.png', link: 'https://dolphin.ru.com?utm_source=Media&utm_medium=cpc&utm_campaign=Lucky_study'}, {name: 'dolphinAnty.png', link: 'https://anty.dolphin.ru.com?utm_source=Media&utm_medium=cpc&utm_campaign=Lucky_study'}, {name: 'iproxy.png', link: 'https://iproxy.online/'}, {name: 'hoaxh.png', link: 'https://hoax.tech/main'}, {name: 'peerclick.png', link: 'https://peerclick.com/ru/'}, {name: 'spyover.png', link: 'https://spyover.com/ru/'}, {name: 'capitlist.png', link: 'https://capitalist.net/'},{name: 'zaleyCash.png', link: 'http://promo.zaleycash.com/hello?utm_source=lucky-online&utm_medium=partner&utm_campaign=course'}, {name: 'publer.png', link: 'https://publer.pro/'}, {name: 'proTraffic.png', link: 'https://protraffic.com/?utm_source=lucky_school'}, {name: 'traffiArdinal.png', link: 'https://trafficcardinal.com/'}]
+.partners
+    h2.partners__title Партнеры курса
+    ul.partners__list.partnersLogo
+        each val in partnersLogo
+            li.partnersLogo__item
+                a.partnersLogo__link(target='_blank' href=""+val.link)
+                    img(class="partnersLogo__avatar" src="static/images/general/"+val.name)

@@ -1,0 +1,19 @@
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    padding: 0 20px;
+
+  }
+  &__link {
+    color: $color-shark;
+    text-decoration: none;
+    font-family: $font-monsterrat;
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,81 @@
+.programAccordion {
+  font-family: $font-dewi;
+  @include phone {
+    padding:0 10px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    &:last-child {
+      border-bottom: 1px solid #C2C8D1;
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0;
+    transition: .2s;
+    margin: 25px 0 24px 24px;
+    @include tablet-wide{
+      font-size: 18px;
+      line-height: 23px;
+    }
+    @include phone{
+      font-size: 16px;
+      line-height: 21px;
+      margin-left: 10px;
+    }
+    &--active {
+      color: $color-dodger-blue;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #C2C8D1;
+    cursor: pointer;
+  }
+
+  &__item {
+    position: relative;
+    transition: all .25s ease;
+  }
+
+  &__content {
+    overflow: hidden;
+    height: 0;
+    transition: all .25s ease;
+    padding-left: 24px;
+    margin: 0;
+  }
+  &__description {
+    font-family: $font-monsterrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #23272F;
+    padding-left: 8px;
+    position: relative;
+    @include tablet-wide{
+      font-size: 18px;
+      line-height: 27px;
+    }
+    @include phone{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &:before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background: #23272F;
+    }
+  }
+}

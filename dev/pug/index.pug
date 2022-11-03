@@ -1,0 +1,47 @@
+extends template/main
+
+block variables
+    - var title = 'Арбитраж трафика - новости, уроки, курсы, обучение'
+block content
+    .container
+        include modules/nav/nav
+        include modules/nav/navMobile
+    .container-fluid.header--bg
+        .container
+            include modules/header/header
+    .container-fluid.forWhoBlock--bg
+        .forWhoBlock__leftBg
+            .forWhoBlock__bgArrow
+            .forWhoBlock__bgCubes
+        .container#hoom
+            include modules/forWho/forWho
+    .container__fluid.result--bg
+        .container
+            include modules/result/result
+    .container__fluid.programBg
+        .programBg__arrow
+            .programBg--bg
+        .container
+            include modules/program/program
+    .container-fluid.format--bg#format
+        .format__arrow
+        .container
+            include format/format
+    .container__fluid.platform__block
+        .platform--bg
+            .container
+                include modules/platform/platform
+            .platform__cursImgBlock
+    .container__fluid.budget--bg
+        .container
+            include modules/budget/budget.pug
+    .container#partners
+        include partners/partners
+    .container-fluid.footerRegistration--bg
+        .container
+            include footerRegistration/footerRegistration
+    .container-fluid.footer--bg
+        .container
+            include footer/footer
+    .container
+        include modal/modal

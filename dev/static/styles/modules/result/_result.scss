@@ -1,0 +1,105 @@
+.result {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  box-sizing: border-box;
+  max-height: 878px;
+  margin: 0 auto;
+  @include tablet-wide {
+    max-width: 940px;
+    padding: 64px 0;
+    max-height: none;
+  }
+  @include tablet {
+    max-width: 620px;
+  }
+  @include phone-wide {
+    max-width: 480px;
+    padding: 48px 0;
+  }
+  @include phone {
+    max-width: 360px;
+    padding: 32px 0;
+  }
+
+  &--bg {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto 150px;
+    background: url("../images/general/platform_bg.jpg") no-repeat center center/cover;
+    border-radius: 64px;
+    @include tablet-wide {
+      background-image: url("../images/general/platform_bg_mobile.jpg");
+      margin: 0 auto 161px;
+    }
+    @include tablet {
+      background-image: url("../images/general/platform_bg_mobile_640.jpg");
+      overflow: hidden;
+      border-radius: 32px;
+      max-height: none;
+      margin: 0 auto 100px;
+    }
+    @include phone-wide {
+      background-image: url("../images/general/platform_bg_mobile_480.jpg");
+      margin: 0 auto 80px;
+
+    }
+    @include phone {
+      margin: 0 auto 48px;
+
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 752px;
+    top: 0;
+    right: 270px;
+    background: url('../images/general/result_arrow.svg') no-repeat;
+    @include tablet-wide {
+      background-image: url('../images/general/result_arrow_mobile.svg');
+      right: 57px;
+    }
+    @include tablet {
+      background-image: url('../images/general/result_arrow_mobile_640.svg');
+      right: -210px;
+    }
+    @include phone-wide {
+      background-image: url('../images/general/result_arrow_mobile_480.svg');
+      right: -442px;
+      top: -43px;
+    }
+    @include phone {
+      background-image: url('../images/general/result_arrow_mobile_320.svg');
+      right: -550px;
+      top: -4px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: flex-start;
+    min-height: 408px;
+    position: relative;
+    margin: 156px auto 0;
+    max-width: 1170px;
+    width: 100%;
+    justify-content: space-between;
+    @include tablet-wide {
+      max-width: 940px;
+      width: 100%;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    @include phone-wide {
+      margin: 116px auto 0;
+    }
+    @include phone {
+      margin: 106px auto 0;
+    }
+  }
+}

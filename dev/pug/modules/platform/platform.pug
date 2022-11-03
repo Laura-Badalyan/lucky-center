@@ -1,0 +1,36 @@
+- var listItem = ["Обучающие гайды от экспертов ", "Промокоды на скидки и триалы в топовых арбитражных сервисах", "Справочник арбитражных терминов"]
+.platform
+    .platform__textBlock
+        h2.platform__title.platformTitle
+            span.platform__colored
+                | Современная
+            br
+            | обучающая платформа
+        p.platform__description
+            | Видеокурс пройдет на обучающей платформе Lucky
+            span.platform__colored Center
+            |,
+            br
+            | внутри которой вам будут доступны:
+        .platform__list.lessonList
+            ul.lessonList__menu
+                each item in listItem
+                    li.lessonList__item= item
+            img(src="static/images/general/platform_mob.png").lessonList__mobBack
+        .platform__lessonMaterials.lessonApps
+            p.lessonApps__description
+                span.lessonApps__bolder
+                    | Скачайте приложение Lucky
+                    span.lessonApps__colored Center
+                |  и получите бесплатный доступ
+                |  ко всем обучающим материалам со своего смартфона.
+            .lessonApps__itemsBlock
+                .lessonApps__appStrore.lessonApps__appStrore--positioned
+                    a.lessonApps__link(href="https://luckygroup.link/lcappios_main")
+                        +icon("appstore_logo", "lessonApps__appLogo").lessonApps__appLogo
+                    +icon("qr-code", "lessonApps__codeQr").lessonApps__appLogo
+                .lessonApps__appStrore
+                    a.lessonApps__link(href="https://luckygroup.link/lcappios_main")
+                        img.lessonApps__appLogo(src="static/images/general/google_play.svg" alt='')
+                    +icon("play_qr", "lessonApps__codeQr").lessonApps__appLogo
+

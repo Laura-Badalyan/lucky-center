@@ -1,0 +1,52 @@
+.lessonList {
+
+  @include phone {
+    padding: 0 10px;
+  }
+
+  &__menu {
+    max-width: 639px;
+    width: 100%;
+    padding: 0;
+    margin: 24px 0 40px;
+    @include phone-wide {
+      max-width: 460px;
+    }
+  }
+
+  &__item {
+    color: $color-white;
+    font-size: 18px;
+    font-weight: $font-weight-regular;
+    font-family: $font-monsterrat;
+    line-height: 27px;
+    list-style: none;
+    position: relative;
+    padding-left: 13px;
+    @include phone {
+      font-size: $base-font-size;
+      line-height: 24px;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: $color-dodger-blue;
+      border-radius: 1px;
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+  }
+
+  &__mobBack {
+    display: none;
+    @include tablet {
+      display: block;
+      max-width: 460px;
+      width: 100%;
+      margin: 20px auto 40px;
+    }
+  }
+}

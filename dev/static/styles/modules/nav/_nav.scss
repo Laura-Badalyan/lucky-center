@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 40px;
+  padding-top: 24px;
+  box-sizing: border-box;
+  @include tablet-wide {
+    display: none;
+  }
+  &__logo {
+
+  }
+
+  &__menu {
+    margin-left: auto;
+    margin-right: 28px;
+  }
+
+  &__entry {
+
+  }
+}

@@ -1,0 +1,5 @@
+.break {
+  @include tablet-wide {
+    display: none;
+  }
+}

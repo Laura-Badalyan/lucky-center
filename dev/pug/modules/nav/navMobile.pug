@@ -1,0 +1,26 @@
+- var menuMobile = [{name: 'Для кого', link: '#hoom'}, {name: 'Программа', link: '#format'}]
+.navMobile
+    .navMobile__navigation
+        .navMobile__logo.logo
+            a.logo__link(href="#")
+                +icon('nav_logo')
+            a.logo__linkMobile(href="#")
+                +icon('mobileLogo')
+        .navMobile__buttonBurger.buttonBurger
+            a.navMobile__login(href="https://luckycenter.ekvio.ru/login")
+                +icon('loginButton')
+            .navMobile__entry.entry
+                a.entry__login.button(href="https://luckycenter.ekvio.ru/login") Войти
+                a.entry__registration.button.button--fill(href="https://lucky-center.com/auth/registration") Регистрация
+            .mobileNav.mobileNav__burger
+                .mobileNav__block
+                    .mobileNav__item
+                    .mobileNav__item
+                    .mobileNav__item
+                p.mobileNav__text
+                    | Меню
+    .navMobile__menu.mobileMenu
+        ul.mobileMenu__list
+            each val in menuMobile
+                li.mobileMenu__item
+                    a.mobileMenu__link(href="" + val.link)= val.name

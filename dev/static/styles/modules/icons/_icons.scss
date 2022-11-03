@@ -1,0 +1,61 @@
+.icons {
+  background-color: $color-dodger-blue;
+  border-radius: 4px;
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+
+  &--clean {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  &:hover {
+    box-shadow: 0 0 5px 1px hsl(0deg 0% 100% / 40%);
+  }
+
+  &__telegram {
+    svg {
+      width: 22px;
+      height: 18px;
+    }
+  }
+  &__vk {
+    svg {
+      width: 22px;
+      height: 12px;
+    }
+  }
+  &__instagram {
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__youtube {
+    padding: 0;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__arrow-right {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/general/arrow__right.svg);
+  }
+  &__step1{
+    width: 500px;
+    height: 500px;
+  }
+}

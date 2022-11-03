@@ -1,0 +1,25 @@
+.budget{
+  border-radius: 64px;
+  max-width: 1920px;
+  max-height: 1206px;
+  width: 100%;
+
+  &--bg {
+    max-width: 1920px;
+    width: 100%;
+    border-radius: 64px;
+    background: url("../images/general/blueWithShadow.png") no-repeat;
+    padding-top: 495px;
+    background-size: cover;
+    margin: 0 auto;
+    @include tablet{
+      border-radius: 32px;
+    }
+    @include phone{
+      border-radius: 24px;
+    }
+  }
+  &__block{
+    max-width: 1183px;
+  }
+}

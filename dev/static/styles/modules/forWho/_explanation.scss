@@ -1,0 +1,8 @@
+.explanation {
+  &__item {
+    display: flex;
+    @include phone-wide {
+      flex-direction: column;
+    }
+  }
+}

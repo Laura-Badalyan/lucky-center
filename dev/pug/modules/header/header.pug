@@ -1,0 +1,20 @@
+- var list = [{strong: 'Теория и практика', info: ' от экспертов сферы'},{strong: 'Бюджет на пролив трафика', info: ' для успешных студентов'},{strong: 'Перспектива стажировки и работы в команде', info: ' после окончания курса'}]
+header.header
+    .header__description.description
+        p.description__about
+            span.description__accent Бесплатный
+            |   обучающий видеокурс
+        h1.header__title
+            span.header__accent Арбитраж трафика: с 0 до
+            |   первой прибыли
+        ul.description__list.headerList
+            each val in list
+                li.headerList__item
+                    strong.headerList__first= val.strong
+                    | #{val.info}
+        .description__receive
+            a.description__receive--button.button--fill.button(href="https://luckygroup.link/bc_bot_l1") Принять участие
+                i.icons.icons__arrow-right.icons--clean
+            p.description__receive--text Старт: 24 марта
+    .header__parallax.parallax
+        .parallax__object

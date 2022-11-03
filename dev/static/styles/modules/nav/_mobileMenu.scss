@@ -1,0 +1,30 @@
+.mobileMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: height .5s ease-in-out;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 50px;
+  &__show {
+    opacity: 1;
+    height: 220px;
+  }
+  &__item {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+  &__link {
+    color: $color-shark;
+    text-decoration: none;
+    font-family: $font-monsterrat;
+    font-weight: $font-weight-regular;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  &__list{
+    padding: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.footerChat {
+  margin-top: 55px;
+  &__title {
+    font-family: $font-monsterrat;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-white;
+    margin: 0 0 16px;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__text {
+    margin-left: 16px;
+    font-family: $font-monsterrat;
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+    line-height: 130%;
+    color: $color-white;
+    text-decoration: none;
+  }
+}

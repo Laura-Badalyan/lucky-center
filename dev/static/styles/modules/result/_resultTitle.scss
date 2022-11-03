@@ -1,0 +1,26 @@
+.resultTitle {
+  align-self: flex-start;
+  font-family: $font-dewi;
+  color: $color-white;
+  font-size: 44px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: 0 10px;
+
+  &__acent {
+    color: $color-dodger-blue;
+  }
+
+  @include tablet-wide {
+    font-size: 36px;
+  }
+
+  @include phone-wide {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  @include phone {
+    font-size: 24px;
+  }
+}

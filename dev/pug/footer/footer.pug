@@ -1,0 +1,34 @@
+footer.footer.animatedMarking
+    .footer__content.footerContent
+        .footerContent__left
+            .footerContent__logo
+                +icon('footer__logo', 'footerContent__logoSvg')
+            .footerContent__chat.footerChat
+                p.footerChat__title Чат для арбитражников:
+                a.footerChat__link(href="//luckygroup.link/lcchat" target="_blank")
+                    i.icons.icons__telegram
+                        +icon('telegram_logo','telegram')
+                    span.footerChat__text luckygroup.link/lcchat
+        .footerContent__right
+            .footerContent__social.footerSocial
+                p.footerSocial__title Подпишись на соцсети
+                ul.footerSocial__list.socialLinks
+                    li.socialLinks__item
+                        a.socialLinks__link(href="https://luckygroup.link/tg_site" target="_blank")
+                            i.icons.icons__telegram
+                                +icon('telegram_logo','telegram')
+                    li.socialLinks__item
+                        a.socialLinks__link(href="https://luckygroup.link/vk_site" target="_blank")
+                            i.icons.icons__vk
+                                +icon('vk_logo','vk')
+                    li.socialLinks__item
+                        a.socialLinks__link(href="https://luckygroup.link/inst_site" target="_blank")
+                            i.icons.icons__instagram
+                                +icon('instagram_logo','instagram')
+                    li.socialLinks__item
+                        a.socialLinks__link(href="https://luckygroup.link/yt_site" target="_blank")
+                            i.icons.icons__youtube
+                                +icon('youtube_logo','youtube')
+    .footer__info
+        p.footer__copyright © 2022 LuckyCenter. Все права защищены.
+        a.footer__polytics(href="#" target='_blank') Политика конфиденциальности

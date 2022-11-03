@@ -1,0 +1,52 @@
+.programTitle {
+
+  &__accent {
+    color: $color-dodger-blue;
+  }
+
+  &__bg {
+    position: absolute;
+    left: -42px;
+    top: -8px;
+    @include tablet {
+      position: absolute;
+      left: -13px;
+      top: -8px;
+    }
+    @include phone-wide {
+      left: -4px;
+      top: -19px;
+    }
+    @include phone {
+      left: -4px;
+      top: -19px;
+    }
+
+    svg {
+      width: 412px;
+      margin-left: auto;
+      margin-right: auto;
+
+      display: block;
+      @include tablet {
+        width: 301px;
+      }
+      @include phone-wide {
+        width: 236px;
+      }
+      @include phone {
+        width: 197px;
+      }
+    }
+
+    path {
+      stroke-width: 2px;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}

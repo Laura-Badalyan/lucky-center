@@ -1,0 +1,35 @@
+.button {
+  border: 1px solid $color-shark;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 24px;
+  color: $color-shark;
+  font-family: $font-monsterrat;
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: $color-dodger-blue;
+    border-color: $color-dodger-blue;
+    color: $color-white;
+  }
+  &--fill {
+    background: $color-dodger-blue;
+    border-color: $color-dodger-blue;
+    color: $color-white;
+    &:hover {
+      border: 1px solid $color-blue-ribbon;
+      background-color: $color-blue-ribbon;
+    }
+  }
+  .icons:hover {
+    box-shadow: none;
+  }
+}
